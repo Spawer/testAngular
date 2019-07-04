@@ -1,0 +1,14 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ number }}!
+  </h1>
+</div>
+<h2>Here are some links to help you start: </h2>
+<button (click)="increment()">Click increment !</button><br/>
+<input [(ngModel)]="text" type="text" />
+<h2>{{ text }}</h2>
+<button (click)="toTable()">Click table !</button><br/>
+<p>{{ sumLetterTab }}</p>
+<ul>
+  <li *ngFor="let item of tab">{{ item }}</li>
+</ul>

@@ -1,0 +1,6 @@
+<span>
+    {{ myTodo.id }} /\ {{ myTodo.userId }} /\ {{ myTodo.title }} /\ completed :
+    <!-- <input type="checkbox" [checked]="myTodo.completed" (change)="updateCompleted($event)"> -->
+    <mat-checkbox [(ngModel)]="myTodo.completed" (change)="updateCompleted($event)"></mat-checkbox>
+</span> <br/>
+<button (click)="deleteTodo($event, myTodo)">   delete this todo !</button>

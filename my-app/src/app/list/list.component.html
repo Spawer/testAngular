@@ -1,0 +1,7 @@
+<mat-list>
+  <mat-list-item *ngFor="let leTodo of todos"> <!-- ; let i = index" [attr.data-index]="i" -->
+    <app-todo [myTodo]="leTodo" (todoChange)="updateCompleted($event, leTodo)"
+    (delete)="deleteTodo($event)"></app-todo>
+  </mat-list-item>
+</mat-list>
+<p>{{ getNbCompleted(todos) }}</p>

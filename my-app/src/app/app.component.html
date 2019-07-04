@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <app-playground></app-playground> -->
+<a routerLink="/" routerLinkActive="active">
+    <img width="100" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</a>
+<!-- <app-todos></app-todos> -->
+<div style="display: flex;  height: 100%;">
+    <mat-sidenav-container style="flex: 1">
+        <mat-sidenav mode="side" opened="true">
+            <!-- pour le menu sur le téco -->
+            <mat-nav-list>
+                <a mat-list-item routerLink="/todos" routerLinkActive="active">todos</a>
+                <a mat-list-item routerLink="/playground" routerLinkActive="active">playground</a>
+            </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>
